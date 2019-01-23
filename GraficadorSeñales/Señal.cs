@@ -8,6 +8,7 @@ using System.Numerics;
 namespace GraficadorSeñales
 {
     abstract class Señal
+
     {
         public List<Muestra> Muestras { get; set; }
         public double AmplitudMaxima { get; set; }

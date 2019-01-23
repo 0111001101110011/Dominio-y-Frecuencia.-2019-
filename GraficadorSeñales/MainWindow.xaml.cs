@@ -205,6 +205,11 @@ namespace GraficadorSeñales
                 }
                 indiceActual++;
             }
+            double FrecuenciaFundamental = (double)indiceMaximo * señal.FrecuenciaMuestreo 
+                / (double) transformada.Muestras.Count;
+
+
+            lbl_FrecuenciaFundamental.Text = FrecuenciaFundamental.ToString() + "Hz";
 
             // Línea del Eje X
             plnEjeX_Resultado.Points.Clear();
